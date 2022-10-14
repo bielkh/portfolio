@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(./imagens/background\ sobre\ mim.png);
+    background-color: black;
+    background-repeat: repeat-y;
+    font-size: 1em;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+}
+header {
+    max-width: 1200px;
+}
+.button1 {
+    background-color: var(--cor-1-botão);
+    color: var(--cor-2-botão);
+    display: inline-flex;
+    justify-content: left;    
+    padding: 10px 35px;
+    font-family: monospace;
+    margin-top: 2%;
+    border-radius: 25px;
+
+}
+.button2 {
+    background-color: var(--cor-1-botão);
+    color: var(--cor-2-botão);
+    display: inline;  
+    justify-content: left;
+    padding: 10px 25px;
+    font-family: monospace;
+    margin-top: 2%;
+    border-radius: 25px;
+
+}
+.button3 {
+    background-color: var(--cor-1-botão);
+    color: var(--cor-2-botão);
+    display: inline;
+    justify-content: left;
+    padding: 10px 25px;
+    font-family: monospace;
+    margin-top: 2%;
+    border-radius: 25px;
+}
+.btn:hover{
+    background-color: var(--cor-3-botão);
+    color: white;
+}
+.btn:active {
+    background-color: white;
+    color: black;
+}
+:root{
+    --cor-1-botão : rgb(255, 255, 255);
+    --cor-2-botão : rgb(0, 0, 0);
+    --cor-3-botão : rgb(42, 132, 250);
+    --cor-4-botão : rgb(255, 255, 255);    
+}
+form {
+    width: 50%;
+    max-width: 32rem;
+    font-size: 1.125rem;
+    border: none;
+    transform: translateY(-40%);
+}
+form label,
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 100%;
+}
+form label {
+    color: white;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+form input {
+    font: inherit;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+
+}
+form textarea {
+    font: inherit;
+    padding: 1rem;
+    padding-bottom: 8rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+fieldset {
+    border: 0;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: inline;
+    text-decoration: none;
+    border-radius: 50%;
+    color: rgb(154, 190, 255);
+  }
+  .container1 {
+    display: flex;
+    justify-content: left;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 5vw;
+    font-family: 'Baloo Tammudu 2', cursive;
+    color: white;
+    transform: translateY(0%);
+}
+.container2 {
+    margin: 0px auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    grid-row-gap: 10px;
+    justify-content: center;
+    padding: 0 20px;
+    transform: translateY(-200%);
+}
+h1 {
+    transform: translateY(-400%);
+    font-family: 'Baloo 2', cursive;
+
+}
+a {
+    transform: translateY(-40%)
+}

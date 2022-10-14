@@ -1,0 +1,111 @@
+/* Background feito no photoshop */
+body {
+    background-image: url(./imagens/background.png);
+}
+/* Fiz um container para deixar a caixa no centro da página */
+.container {
+    display: flex;
+    justify-content: center;
+}
+/* Caixa branca no centro da página. Usei site css scan para pegar a box-shadow, usei border-radius para deixar as pontas
+arredondadas e usei transform translateY pra colocar a caixa um pouco para baixo aonde eu queria */
+.card {
+    width: 350px;
+    height: 250px;  
+    background-color: white;
+    border-radius: 70px;
+    box-shadow: rgb(97, 176, 250) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;    
+    resize: vertical;
+    vertical-align: middle;
+    transform: translateY(25%)
+    
+}
+/* A foto do card, usei border-radius para deixar ela redonda também e margin-top pra deixar ela na posição que eu quero */
+.gabriel {
+    width: 130px;
+    height: 150px;
+    border-radius: 80%;
+    margin-top: 15px;
+
+}
+/* Texto de apresentação embaixo da foto, coloquei a fonte direto do google fonts */
+.text-main {
+    text-align: center;
+    color: black;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+
+/* Eu uso o root aqui para armazenar as cores que eu vou usar no var para fazer animação nos botões */
+}
+:root{
+    --cor-1-botão : rgb(255, 255, 255);
+    --cor-2-botão : rgb(0, 0, 0);
+    --cor-3-botão : rgb(42, 132, 250);
+    --cor-4-botão : rgb(255, 255, 255);    
+}
+/* Fiz essa variante para colocar junto com o class="button" para ele atribuir elementos no botão sem danificar ele e adicionar as animações que eu quero. */
+.btn {
+    border: none;
+    outline: var(--cor-3-botão);
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .2s;
+}
+/* Aqui são os botões. Coloquei os atributos que eu quero neles, o var é para usar as cores que eu armazenei no root, eu quero que os botões sejam inline e que eles estejam
+2% abaixo da margin-top. Border-radius em 25 pra deixar o botão arredondado e padding do tamanho que você quiser. 
+Fiz três botões diferentes caso eu quisesse mudar algo individualmente, mas dá pra fazer uma alteração só pra todos os botões.*/
+.button1 {
+    background-color: var(--cor-1-botão);
+    color: var(--cor-2-botão);
+    display: inline;
+    justify-content: center;    
+    padding: 10px 25px;
+    font-family: monospace;
+    margin-top: 2%;
+    border-radius: 25px;
+}
+.button2 {
+    background-color: var(--cor-1-botão);
+    color: var(--cor-2-botão);
+    display: inline;  
+    justify-content: center;
+    padding: 10px 25px;
+    font-family: monospace;
+    margin-top: 2%;
+    border-radius: 25px;
+}
+.button3 {
+    background-color: var(--cor-1-botão);
+    color: var(--cor-2-botão);
+    display: inline;
+    justify-content: center;
+    padding: 10px 25px;
+    font-family: monospace;
+    margin-top: 2%;
+    border-radius: 25px;
+}
+/* Aqui eu tô usando a variante hover para quando o mouse passar em cima do botão, ele mudar a cor do botão e da fonte. Para mudar a cor do botão é background e a cor da
+fonte é só color mesmo */
+.btn:hover{
+    background-color: var(--cor-3-botão);
+    color: white;
+}
+/* Aqui é um active pra quando o botão for clicado, ele mudar a cor de fundo e da letra*/
+.btn:active {
+    background-color: white;
+    color: black;
+}
+/*essa content-table eu fiz para dar borda ao texto que tem embaixo do card. usei a fonte do google fonts também*/
+.content-table  {
+    background-color: white;
+    border-spacing: 0px;
+    color: black;
+    width: auto;
+    height: 350px;
+    margin: 100px 0;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    box-shadow: rgba(46, 146, 240, 0.4) 5px 5px, rgba(46, 146, 240, 0.3) 10px 10px, rgba(46, 146, 240, 0.2) 15px 15px, rgba(46, 146, 240, 0.1) 20px 20px, rgba(46, 146, 240, 0.05) 25px 25px;
+
+
+}

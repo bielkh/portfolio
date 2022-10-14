@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(./imagens/background\ sobre\ mim.png);
+    background-color: black;
+    background-repeat: repeat-y;
+
+}
+/*container 1 serve para alinhar a minha foto do lado esquerdo da página*/
+.container1 {
+    display: flex;
+    justify-self: left;
+    max-width: auto;
+    margin: 0 auto;
+}
+/*container 2 é para alinhar o texto aonde eu queria, não consegui arrumar outra forma de colocar ele então fiz um container*/
+.container2 {
+    display: flex;
+    justify-content: left;
+    max-width: 1000px;
+    margin: -10% auto;
+    font-size: 5vw;
+    font-family: 'Baloo Tammudu 2', cursive;
+    color: white;
+}
+/*container 3 é aonde o texto embaixo do sobre mim se encontra. */
+.container3 {
+    display: flex;
+    justify-content: left;
+    max-width: 1000px;
+    margin: 7% auto;
+    color: white;
+    font-size: 20px;
+}
+/*aqui é a imagem que minha que eu coloquei, com margin top e transform pra deixar na posição que eu queria e border-radius para arredondar*/
+.gabriel2 {
+        width: 240px;
+        height: 250px;
+        border-radius: 50%;
+        margin-top: 15px;
+        transform: translateX(20%);
+}
+/*container que usei para agrupar a grid de imagens sobre os personagens*/
+.container4 {
+    margin: 40px auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+    justify-content: center;
+    padding: 0 20px;
+}
+/*container para o título da grid*/
+.container5 {
+    display: flex;
+    justify-content: left;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: white;
+    font-size: 50px;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+/* aqui começa o quadrado branco do "polaroid"*/
+.polaroid {
+    background: white;
+    padding: 15px 15px 40px;
+}
+/*ajustei o tamanho da foto aqui pra ficar do jeito que eu queria*/
+.photo {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+}
+/*legenda dos polaroids*/
+.caption {
+    margin-top: 10px;
+}
+.button1 {
+    background-color: var(--cor-1-botão);
+    color: var(--cor-2-botão);
+    display: inline;
+    justify-content: center;    
+    padding: 10px 35px;
+    font-family: monospace;
+    margin-top: 2%;
+    border-radius: 25px;
+    transform: translateX(10%)
+}
+.button2 {
+    background-color: var(--cor-1-botão);
+    color: var(--cor-2-botão);
+    display: inline;  
+    justify-content: center;
+    padding: 10px 25px;
+    font-family: monospace;
+    margin-top: 2%;
+    border-radius: 25px;
+    transform: translateX(20%)
+}
+.button3 {
+    background-color: var(--cor-1-botão);
+    color: var(--cor-2-botão);
+    display: inline;
+    justify-content: center;
+    padding: 10px 25px;
+    font-family: monospace;
+    margin-top: 2%;
+    border-radius: 25px;
+    transform: translateX(30%)
+}
+.btn:hover{
+    background-color: var(--cor-3-botão);
+    color: white;
+}
+.btn:active {
+    background-color: white;
+    color: black;
+}
+:root{
+    --cor-1-botão : rgb(255, 255, 255);
+    --cor-2-botão : rgb(0, 0, 0);
+    --cor-3-botão : rgb(42, 132, 250);
+    --cor-4-botão : rgb(255, 255, 255);    
+}
